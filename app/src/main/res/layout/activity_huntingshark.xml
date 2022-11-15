@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -8,7 +9,36 @@
 
     <TextView
         android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sharking Finning is the act of removing fins from sharks and discarding the rest of the shark back into the ocean. This act is prohibited in many countries.The sharks are often still alive when discarded, but without their fins. Unable to swim effectively, they sink to the bottom of the ocean and die of suffocation or are eaten by other predators. Shark finning at sea enables fishing vessels to increase profitability and increase the number of sharks harvested, as they must only store and transport the fins, by far the most profitable part of the shark; the shark meat is bulky to transport.Many countries have banned this practice and require the whole shark to be brought back to port before removing the fins."
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView"
+        android:layout_marginTop="6dp"
+        android:text="The overfishing of sharks has serious effects for the entire marine food chain in some ecosystems. A study found that removing sharks from a reef environment in the Caribbean had a trickling effect on other species. Without sharks, carnivorous fish that the sharks usually fed on thrived. The carnivorous fish, in turn, preyed on parrotfish that kept the corals clean. In time, the reefs changed from one dominated by coral to one overrun by algae."
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/ytlink"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="𝓗𝓾𝓷𝓽𝓲𝓷𝓰 𝓢𝓱𝓪𝓻𝓴" />
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="126dp"
+        android:text="Watch a video" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="279dp"
+        android:layout_height="163dp"
+        android:layout_below="@+id/textView2"
+        android:layout_marginTop="1dp"
+        app:srcCompat="@drawable/sharkfin" />
+
 </RelativeLayout>
