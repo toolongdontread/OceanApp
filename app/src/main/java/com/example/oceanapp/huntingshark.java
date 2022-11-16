@@ -13,14 +13,13 @@ import android.widget.ImageView;
 public class huntingshark extends AppCompatActivity {
 
     private Button ytlink;
-    private Button sharkfinbutton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_huntingshark);
 
-        ytlink = findViewById(R.id.ytlink);
+        ytlink = findViewById(R.id.button);
         ytlink.setOnClickListener(new View.OnClickListener(){
             public void onClick(View view){
                 Uri uri = Uri.parse("https://www.youtube.com/watch?v=7iIyKPpII20&ab_channel=AdventuresofTwoAfloat");

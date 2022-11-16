@@ -4,11 +4,38 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".huntingshark">
+    android:background="#FF0000"
+    tools:context="@string/cb2">
 
     <TextView
         android:id="@+id/textView"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:text="@string/cb"
+        android:textStyle="bold"
+        android:textColor="#00FF00" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="161dp"
+        android:layout_height="189dp"
+        android:layout_toRightOf="@id/textView"
+        app:srcCompat="@drawable/cb" />
+
+    <TextView
+        android:id="@+id/textView7"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="𝓒𝓸𝓻𝓪𝓵 𝓑𝓵𝓮𝓪𝓬𝓱𝓲𝓷𝓰" />
+        android:layout_below="@id/textView"
+        android:text="@string/cb2"
+        android:textStyle="bold"
+        android:textColor="#00FF00" />
+
+    <Button
+        android:id="@+id/button8"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView7"
+        android:text="@string/watch" />
+
 </RelativeLayout>

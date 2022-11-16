@@ -4,11 +4,38 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#0000FF"
     tools:context=".huntingshark">
 
     <TextView
         android:id="@+id/textView"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:text="@string/ml"
+        android:textColor="#FFFF00"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="163dp"
+        android:layout_height="168dp"
+        android:layout_marginLeft="-2dp"
+        android:layout_toRightOf="@id/textView"
+        app:srcCompat="@drawable/ml" />
+
+    <TextView
+        android:id="@+id/textView5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="𝓜𝓪𝓻𝓲𝓷𝓮 𝓛𝓲𝓽𝓽𝓮𝓻r" />
+        android:layout_below="@id/textView"
+        android:text="@string/ml2"
+        android:textColor="#FFFF00"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/button6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView5"
+        android:text="@string/watch" />
 </RelativeLayout>
