@@ -12,6 +12,7 @@ public class NextActivity extends AppCompatActivity {
     private Button button2;
     private Button button3;
     private Button button4;
+    private Button button9;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -51,6 +52,15 @@ public class NextActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Intent intent4 = new Intent(NextActivity.this, overfishing.class);
                 startActivity(intent4);
+            }
+        });
+
+        button9 = findViewById(R.id.button9);
+        button9.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent5 = new Intent(NextActivity.this, todolist.class);
+                startActivity(intent5);
             }
         });
     }
